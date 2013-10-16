@@ -1,7 +1,7 @@
 PCA_factors <- function(data, percentage)
 {
-#Percentage is the amount of variance that we wish to be explained
-#by the selected factors
+#Percentage is the amount of variance that the selected factors
+#have to explain. use 0.5 for 50%
 
 EigenMat = eigen(cor(dataset))
 TotVar = sum(EigenMat$values)
